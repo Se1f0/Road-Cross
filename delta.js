@@ -153,35 +153,35 @@ function create ()
     this.anims.create({
         key: 'flip',
         frames: this.anims.generateFrameNumbers('coin', { start: 0, end: 3 }),
-        frameRate: 5,
+        frameRate: 15,
         repeat: -1
     });
     
     this.anims.create({
         key: 'down',
         frames: this.anims.generateFrameNumbers('player', { start: 0, end: 7 }),
-        frameRate: 5,
+        frameRate: 15,
         repeat: -1
     });
 
     this.anims.create({
         key: 'left',
         frames: this.anims.generateFrameNumbers('player', { start: 8, end: 15 }),
-        frameRate: 5,
+        frameRate: 15,
         repeat: -1
     });
 
     this.anims.create({
         key: 'right',
         frames: this.anims.generateFrameNumbers('player', { start: 16, end: 23 }),
-        frameRate: 5,
+        frameRate: 15,
         repeat: -1
     });
 
     this.anims.create({
         key: 'up',
         frames: this.anims.generateFrameNumbers('player', { start: 24, end: 31 }),
-        frameRate: 5,
+        frameRate: 15,
         repeat: -1
     });
 
@@ -215,7 +215,7 @@ function create ()
     this.physics.add.overlap(player,cars,gameOver,null,this);
     this.physics.add.overlap(player,coins,coinHit,null,this);
     this.physics.add.collider(player,intersections);
-    this.physics.add.collider(cars,cars,wiz,null,this);
+    //this.physics.add.collider(cars,cars,wiz,null,this);
 
     scoreText = this.add.text(640, 800, 'Score: 0', { fontSize: '32px', fill: 'white' });
 }
