@@ -38,10 +38,10 @@ var moving = false;
 var score = 0;
 var scoreText;
 
-var speed1 = getRndInteger(200,800);
-var speed2 = getRndInteger(200,800);
-var speed3 = getRndInteger(200,800);
-var speed4 = getRndInteger(200,800);
+var speed1 = getRndInteger(200,700);
+var speed2 = getRndInteger(200,700);
+var speed3 = getRndInteger(200,700);
+var speed4 = getRndInteger(200,700);
 
 function preload ()
 {
